@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YQChoiceImages"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "YQChoiceImages是一个简单易用的图片选择器."
 
   # This description is used to generate tags and improve search results.
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/QuinceyYang/YQChoiceImages.git", :tag => "0.0.4" }
+  s.source       = { :git => "https://github.com/QuinceyYang/YQChoiceImages.git", :tag => "0.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+# s.frameworks = "Foundation", "UIKit", "MobileCoreServices"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -131,7 +131,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+# s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CoreServices" }
 # s.dependency 'YQBaseViewController', 'YQExtension', 'YQButton'
 # s.dependency 'YQExtension', '~> 0.0.3'
 # s.dependency 'YQButton', '~> 1.0'

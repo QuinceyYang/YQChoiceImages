@@ -77,16 +77,16 @@
 		4D20CEB7228E858D008AB6B7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4D20CEB8228E858D008AB6B7 /* YQEasyImageBrowserVC.h */,
-				4D20CEB9228E858D008AB6B7 /* YQChoiceImagesVC.h */,
 				4D20CEBA228E858D008AB6B7 /* UIView+Extension.h */,
+				4D20CEC0228E858D008AB6B7 /* UIView+Extension.m */,
+				4D20CEBF228E858D008AB6B7 /* YQBaseViewController.h */,
 				4D20CEBB228E858D008AB6B7 /* YQBaseViewController.m */,
 				4D20CEBC228E858D008AB6B7 /* YQButton.h */,
-				4D20CEBD228E858D008AB6B7 /* YQEasyImageBrowserVC.m */,
-				4D20CEBE228E858D008AB6B7 /* YQChoiceImagesVC.m */,
-				4D20CEBF228E858D008AB6B7 /* YQBaseViewController.h */,
-				4D20CEC0228E858D008AB6B7 /* UIView+Extension.m */,
 				4D20CEC1228E858D008AB6B7 /* YQButton.m */,
+				4D20CEB9228E858D008AB6B7 /* YQChoiceImagesVC.h */,
+				4D20CEBE228E858D008AB6B7 /* YQChoiceImagesVC.m */,
+				4D20CEB8228E858D008AB6B7 /* YQEasyImageBrowserVC.h */,
+				4D20CEBD228E858D008AB6B7 /* YQEasyImageBrowserVC.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";

@@ -7,7 +7,8 @@
 //
 
 #import "YQChoiceImagesVC.h"
-#import <CoreServices/UTCoreTypes.h>
+//#import <CoreServices/UTCoreTypes.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 //#import "UIImage+Bitmap.h"
 #import "YQEasyImageBrowserVC.h"
 
@@ -152,7 +153,7 @@
             controller.navigationItem.titleView = l;
             controller.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
             NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
-            [mediaTypes addObject:(__bridge NSString *)kUTTypeImage];
+            [mediaTypes addObject:(NSString *)kUTTypeImage];
             controller.mediaTypes = mediaTypes;
             controller.delegate = self;
             
