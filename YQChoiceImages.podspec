@@ -105,7 +105,7 @@ s.platform     = :ios, "8.0"
   #
 
   # s.resource  = "icon.png"
-# s.resources = "YQChoiceImages/Images/*.png"
+s.resources = "YQChoiceImages/Images/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
