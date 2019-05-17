@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YQChoiceImages"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "YQChoiceImages是一个简单易用的图片选择器."
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/QuinceyYang/YQChoiceImages.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/QuinceyYang/YQChoiceImages.git", :tag => "0.0.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "YQChoiceImages/Images/*.png"
+# s.resources = "YQChoiceImages/Images/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
