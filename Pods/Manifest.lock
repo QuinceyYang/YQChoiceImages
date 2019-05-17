@@ -1,24 +1,3 @@
-PODS:
-  - YQBaseViewController (1.0)
-  - YQButton (1.0)
-  - YQExtension (0.0.3)
-
-DEPENDENCIES:
-  - YQBaseViewController (~> 1.0)
-  - YQButton (~> 1.0)
-  - YQExtension (~> 0.0.3)
-
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - YQBaseViewController
-    - YQButton
-    - YQExtension
-
-SPEC CHECKSUMS:
-  YQBaseViewController: 3002b1cafb7953b797f11f8e74a490a2ae6f6081
-  YQButton: 4498c2f0957023a0a91dfcbf8d990afa33d0d2a3
-  YQExtension: 81c071003eddeec269293c3ef530cb84df0ccefd
-
-PODFILE CHECKSUM: 2a5ec27fbc43982c7072fc1783227e3305a7375c
+PODFILE CHECKSUM: ad7c8b5c58e591398db43e7bab757d581212717e
 
 COCOAPODS: 1.5.0

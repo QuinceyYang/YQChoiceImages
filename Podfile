@@ -6,7 +6,7 @@ target 'YQChoiceImages' do
   # use_frameworks!
 
   # Pods for YQChoiceImages
-pod 'YQBaseViewController', '~> 1.0'
-pod 'YQExtension', '~> 0.0.3'
-pod 'YQButton', '~> 1.0'
+  # pod 'YQBaseViewController', '~> 1.0'
+  # pod 'YQExtension', '~> 0.0.3'
+  # pod 'YQButton', '~> 1.0'
 end

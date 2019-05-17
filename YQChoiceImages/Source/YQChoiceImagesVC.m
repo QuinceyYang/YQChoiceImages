@@ -8,7 +8,7 @@
 
 #import "YQChoiceImagesVC.h"
 #import <CoreServices/UTCoreTypes.h>
-#import "UIImage+Bitmap.h"
+//#import "UIImage+Bitmap.h"
 #import "YQEasyImageBrowserVC.h"
 
 @interface YQChoiceImagesVC () <UIActionSheetDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
@@ -177,7 +177,7 @@
         UIImage *img = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
         NSLog(@"img = %@", img);
         //3024 × 4032
-        img = [img imageByScalingAspectToMinSize:CGSizeMake(3024/2, 4032/2)];
+        //img = [img imageByScalingAspectToMinSize:CGSizeMake(3024/2, 4032/2)];
         NSLog(@"img = %@", img);
         if (weakSelf.photosBtnArr.count < 5) {
             CGFloat x = 12 + weakSelf.photosBtnArr.count%5*72;
