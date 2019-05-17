@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-UIApplication.sharedApplication.statusBarFrame.size.height-self.navigationController.navigationBar.frame.size.height)];
+    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height-UIApplication.sharedApplication.statusBarFrame.size.height-self.navigationController.navigationBar.frame.size.height)];
     [self.view addSubview:scrollView];
     _scrollView = scrollView;
     CGFloat tmpY = 0;
@@ -54,7 +54,11 @@
                 [sheet showInView:weakSelf.view];
             }
             else {
-                [MBProgressHUD showMessageOnView:weakSelf.view text:@"最多只能选5张图片"];
+                // 弹框提醒
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"最多只能添加5张图片" preferredStyle:UIAlertControllerStyleAlert];
+                [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil]];
+                // 弹出对话框
+                [weakSelf presentViewController:alert animated:true completion:nil];
             }
         };
     }
@@ -71,8 +75,8 @@
         }
         //self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
         self.navigationItem.title = @"添加照片";
-        [self setTitleColor:RGB(0x33, 0x33, 0x33) font:[UIFont boldSystemFontOfSize:18]];
-        [self setNavBgColor:RGB(0xff, 0xff, 0xff)];
+        [self setTitleColor:[UIColor colorWithRed:0x33/255.0 green:0x33/255.0 blue:0x33/255.0 alpha:1.0] font:[UIFont boldSystemFontOfSize:18]];
+        [self setNavBgColor:UIColor.whiteColor];
         [self setNavShadowColor:[UIColor clearColor]];
         [self setNavLeftImage:@"common_back_icon"];
     }
@@ -257,7 +261,7 @@
             };
         }
         else {
-            [MBProgressHUD showMessageOnView:weakSelf.view text:@"最多只能选5张图片"];
+            NSLog(@"Warning: 最多只能选5张图片");
         }
     }];
     

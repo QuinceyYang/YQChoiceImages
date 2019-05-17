@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-UIApplication.sharedApplication.statusBarFrame.size.height-self.navigationController.navigationBar.frame.size.height)];
+    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height-UIApplication.sharedApplication.statusBarFrame.size.height-self.navigationController.navigationBar.frame.size.height)];
     scrollView.backgroundColor = UIColor.blackColor;
     scrollView.delegate = self;
     scrollView.pagingEnabled = YES;
@@ -58,8 +58,8 @@
         }
         //self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
         //self.navigationItem.title = @"";
-        [self setTitleColor:RGB(0x33, 0x33, 0x33) font:[UIFont boldSystemFontOfSize:18]];
-        [self setNavBgColor:RGB(0xff, 0xff, 0xff)];
+        [self setTitleColor:[UIColor colorWithRed:0x33/255.0 green:0x33/255.0 blue:0x33/255.0 alpha:1.0] font:[UIFont boldSystemFontOfSize:18]];
+        [self setNavBgColor:UIColor.whiteColor];
         [self setNavShadowColor:[UIColor clearColor]];
         [self setNavLeftImage:@"common_back_icon"];
         [self setNavRightImage:@"icon_black_delete"];
