@@ -172,30 +172,6 @@
     });
 }
 
-/**
- *  弹窗
- *
- *  @param title    弹窗标题
- *  @param message  弹窗信息
- *  @param delegate 弹窗代理
- */
-+ (void)showAlertView:(NSString*) title
-           andMessage:(NSString *) message
-           andHidenCan:(BOOL)isHidenCan
-         withDelegate:(id<UIAlertViewDelegate>) delegate {
-    dispatch_async(dispatch_get_main_queue() , ^{
-        UIAlertView *alert = [[UIAlertView alloc] init];
-        alert.title = title;
-        alert.message = message;
-        alert.delegate = delegate;
-        if (!isHidenCan) {
-            [alert addButtonWithTitle:@"取消"];
-        }
-        [alert addButtonWithTitle:@"确定"];
-        [alert show];
-        alert = nil;
-    });
-}
 
 /**
  * @author yqing
