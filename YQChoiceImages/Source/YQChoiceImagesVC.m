@@ -78,7 +78,7 @@
         [self setTitleColor:[UIColor colorWithRed:0x33/255.0 green:0x33/255.0 blue:0x33/255.0 alpha:1.0] font:[UIFont boldSystemFontOfSize:18]];
         [self setNavBgColor:UIColor.whiteColor];
         [self setNavShadowColor:[UIColor clearColor]];
-        [self setNavLeftImage:@"common_back_icon"];
+        //[self setNavLeftImage:@"common_back_icon"];
     }
 }
 

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "YQEasyImageBrowserVC.h"
+#import "YQChoiceImagesVC.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:[YQChoiceImagesVC new]];
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.backgroundColor = UIColor.whiteColor;
+    self.window.rootViewController = nc;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

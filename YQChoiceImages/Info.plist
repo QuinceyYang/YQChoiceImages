@@ -18,12 +18,16 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+    <key>NSCameraUsageDescription</key>
+    <string>“YQChoiceImages”需要访问您的相机，以便您正常使用拍摄照片。是否允许此APP使用你的相机？</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>“YQChoiceImages”需要为您添加图片,您同意后才能保存图片。是否允许此APP访问你的相册添加图片？</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>“YQChoiceImages”请求访问您的相册,是否允许此APP访问你的相册？</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
