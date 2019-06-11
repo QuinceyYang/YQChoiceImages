@@ -20,27 +20,6 @@
 @property (nonatomic, assign) CGPoint origin;
 @property (nonatomic, assign) CGFloat maxX;
 @property (nonatomic, assign) CGFloat maxY;
-@property (nonatomic, assign) CGFloat minX;
-@property (nonatomic, assign) CGFloat minY;
-
-- (void) makeCorner:(CGFloat)r;
-
-/**
- @brief 弹窗
- @param title 弹窗标题
- message 弹窗信息
- */
-+ (void) showAlertView: (NSString*) title andMessage: (NSString *) message;
-/**
- *  弹窗
- *
- *  @param title    弹窗标题
- *  @param message  弹窗信息
- *  @param delegate 弹窗代理
- */
-+ (void) showAlertView: (NSString*) title
-            andMessage: (NSString *) message
-          withDelegate: (UIViewController<UIAlertViewDelegate> *) delegate;
 
 
 /**

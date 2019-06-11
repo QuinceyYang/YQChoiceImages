@@ -12,8 +12,6 @@
 
 @dynamic maxX;
 @dynamic maxY;
-@dynamic minX;
-@dynamic minY;
 
 - (void)setX:(CGFloat)x
 {
@@ -117,59 +115,6 @@
 
 - (CGFloat)maxY {
     return CGRectGetMaxY(self.frame);
-}
-
-- (CGFloat)minY {
-    return CGRectGetMinY(self.frame);
-}
-
-- (CGFloat)minX {
-    return CGRectGetMinX(self.frame);
-}
-
-
-- (void)makeCorner:(CGFloat)r {
-    if (r < 0) r = 0;
-    self.layer.cornerRadius = r;
-    self.layer.masksToBounds = YES;
-}
-
-/**
- @brief 弹窗
- @param title 弹窗标题
- message 弹窗信息
- */
-+ (void)showAlertView:(NSString*)title andMessage:(NSString *) message {
-    dispatch_async(dispatch_get_main_queue() , ^{
-        UIAlertView *alert = [[UIAlertView alloc] init];
-        alert.title = title;
-        alert.message = message;
-        [alert addButtonWithTitle:@"确定"];
-        [alert show];
-        alert = nil;
-    });
-}
-
-/**
- *  弹窗
- *
- *  @param title    弹窗标题
- *  @param message  弹窗信息
- *  @param delegate 弹窗代理
- */
-+ (void)showAlertView:(NSString*) title
-           andMessage:(NSString *) message
-         withDelegate:(UIViewController<UIAlertViewDelegate> *) delegate {
-    dispatch_async(dispatch_get_main_queue() , ^{
-        UIAlertView *alert = [[UIAlertView alloc] init];
-        alert.title = title;
-        alert.message = message;
-        alert.delegate = delegate;
-        [alert addButtonWithTitle:@"确定"];
-        [alert addButtonWithTitle:@"取消"];
-        [alert show];
-        alert = nil;
-    });
 }
 
 
